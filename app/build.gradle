@@ -30,6 +30,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     // Dependency on a local library module
-    implementation project(":eagleeye")
+    //implementation project(":eagleeye")
+    implementation 'com.github.SumonHub:EagleEye:1.0.0'
 
 }
