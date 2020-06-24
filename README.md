@@ -1,5 +1,7 @@
-# EagleEyeDemo
+# EagleEye
 Live internet check via EagleEye.
+
+[![](https://jitpack.io/v/SumonHub/EagleEye.svg)](https://jitpack.io/#SumonHub/EagleEye)
 
 # Gradle Dependency
 Step 1. Add the JitPack repository to your build file
