@@ -52,4 +52,4 @@ Step 2. Add the dependency
 ## Check out example code: [Example](https://github.com/user/repo/blob/branch/other_file.md)
 
 # Demo
-![](https://github.com/SumonHub/KenBurnsView/blob/master/preview/preview.gif)
+![](https://github.com/SumonHub/EagleEye/blob/master/preview/demo.gif)
