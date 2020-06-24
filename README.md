@@ -49,7 +49,7 @@ Step 2. Add the dependency
           }
       });
       
-## Check out example code: [Example](https://github.com/user/repo/blob/branch/other_file.md)
+## Check out example code: [Example](https://github.com/SumonHub/EagleEye/tree/master/app)
 
 # Demo
 ![](https://github.com/SumonHub/EagleEye/blob/master/preview/demo.gif)
