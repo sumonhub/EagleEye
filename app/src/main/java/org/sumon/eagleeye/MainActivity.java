@@ -1,13 +1,10 @@
-package org.sumon.eagleeyedemo;
+package org.sumon.eagleeye;
 
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import org.sumon.eagleeye.EagleEyeObserver;
-import org.sumon.eagleeye.OnChangeConnectivityListener;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
