@@ -29,7 +29,7 @@ Step 2. Add the dependency
       <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.myapp">
           <application
-                  android:name="org.sumon.eagleeye.EagleEyeApplication" >
+                  android:name="org.sumon.eagleeye.Vision" >
               ...
           </application>
       </manifest>

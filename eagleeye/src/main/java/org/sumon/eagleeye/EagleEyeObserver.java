@@ -33,7 +33,10 @@ public class EagleEyeObserver extends BroadcastReceiver {
             boolean isConnected = activeNetwork != null &&
                     activeNetwork.isConnectedOrConnecting();
 
-            onChangeConnectivity.onChanged(isConnected && isInternetAvailable());
+            if (onChangeConnectivity != null) {
+                onChangeConnectivity.onChanged(isConnected && isInternetAvailable());
+            }
+
         }
     }
 
@@ -43,8 +46,8 @@ public class EagleEyeObserver extends BroadcastReceiver {
         Future<Boolean> result = executor.submit(new Callable<Boolean>() {
             public Boolean call() throws Exception {
                 InetAddress address = InetAddress.getByName("www.google.com");
-                Log.d(TAG, "call: accessible = " + !address.equals(""));
-                return !address.equals("");
+                Log.d(TAG, "call: accessible = " + !address.toString().equals(""));
+                return !address.toString().equals("");
             }
         });
 
