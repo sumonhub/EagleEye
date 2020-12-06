@@ -7,7 +7,7 @@ import android.util.Log;
 
 import java.util.Objects;
 
-public class Vision extends Application {
+public class App extends Application {
 
     private static final String TAG = "EagleEyeApplication";
     private EagleEyeObserver eagleEyeObserver;

@@ -3,7 +3,7 @@
     package="org.sumon.eagleeyedemo">
 
     <application
-        android:name="org.sumon.eagleeye.Vision"
+        android:name="org.sumon.eagleeye.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
