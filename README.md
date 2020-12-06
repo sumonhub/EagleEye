@@ -16,7 +16,7 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
       
       dependencies {
-                implementation 'com.github.SumonHub:EagleEye:1.1.0'
+                implementation 'com.github.SumonHub:EagleEye:latest-version'
         }
         
 # To-do
@@ -36,7 +36,7 @@ Step 2. Add the dependency
 
 * If you do override the Application class, change it to extend EagleEyeApplication (if possible) as follows:
 
-      public class MyApplication extends EagleEyeApplication { ... }
+      public class MyApplication extends App { ... }
 
 ## Use
 
