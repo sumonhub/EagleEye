@@ -1,4 +1,4 @@
-package org.sumon.eagleeye;
+package org.sumon.eagleeyedemo;
 
 import org.junit.Test;
 

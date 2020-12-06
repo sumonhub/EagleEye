@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.sumon.eagleeye">
+    package="org.sumon.eagleeyedemo">
 
     <application
         android:name="org.sumon.eagleeye.Vision"
@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="org.sumon.eagleeye.MainActivity">
+        <activity android:name="org.sumon.eagleeyedemo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

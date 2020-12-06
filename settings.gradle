@@ -1,3 +1,3 @@
-include ':eagleeye'
+include ':eagleeyelib'
 include ':app'
 rootProject.name = "EagleEyeDemo"
