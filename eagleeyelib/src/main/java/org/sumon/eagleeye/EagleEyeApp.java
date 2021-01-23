@@ -7,16 +7,9 @@ import android.util.Log;
 
 import java.util.Objects;
 
-public class App extends Application {
+public class EagleEyeApp extends Application {
 
-    private static final String TAG = "EagleEyeApplication";
-    private EagleEyeObserver eagleEyeObserver;
-
-    private EagleEyeObserver getEagleEyeObserver() {
-        if (eagleEyeObserver == null)
-            eagleEyeObserver = new EagleEyeObserver();
-        return eagleEyeObserver;
-    }
+    private static final String TAG = "EagleEyeApp";
 
     @Override
     public void onCreate() {
@@ -29,7 +22,7 @@ public class App extends Application {
         try {
             IntentFilter filter = new IntentFilter();
             filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
-            registerReceiver(getEagleEyeObserver(), filter);
+            registerReceiver(EagleEyeObserver.getInstance(), filter);
         } catch (Exception e) {
             Log.e(TAG, Objects.requireNonNull(e.getMessage()));
         }

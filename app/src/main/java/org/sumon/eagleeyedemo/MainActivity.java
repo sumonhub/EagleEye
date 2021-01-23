@@ -1,13 +1,14 @@
 package org.sumon.eagleeyedemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.sumon.eagleeye.EagleEyeObserver;
+import org.sumon.eagleeye.EagleEye;
 import org.sumon.eagleeye.OnChangeConnectivityListener;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,13 +19,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EagleEyeObserver.setConnectivityListener(new OnChangeConnectivityListener() {
+        EagleEye.getStatus(this, new OnChangeConnectivityListener() {
             @Override
             public void onChanged(boolean status) {
-                Log.d(TAG, "onChanged: main = " + status);
-                TextView t = findViewById(R.id.textView);
-                t.setText("" + status);
-                Toast.makeText(MainActivity.this, "" + status, Toast.LENGTH_SHORT).show();
+                Log.d(TAG, "onChanged status: " + status);
+                TextView text = findViewById(R.id.text);
+                text.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(MainActivity.this, MainActivity2.class));
+                    }
+                });
             }
         });
     }

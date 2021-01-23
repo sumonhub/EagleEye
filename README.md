@@ -29,7 +29,7 @@ Step 2. Add the dependency
       <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.myapp">
           <application
-                  android:name="org.sumon.eagleeye.App" >
+                  android:name="org.sumon.eagleeye.EagleEyeApp" >
               ...
           </application>
       </manifest>
@@ -40,14 +40,14 @@ Step 2. Add the dependency
 
 ## Use
 
-* In youre activity/fragment get status like below
+* In your activity/fragment get status like below
 
-      EagleEyeObserver.setConnectivityListener(new OnChangeConnectivityListener() {
-          @Override
-          public void onChanged(boolean status) {
-              Toast.makeText(MainActivity.this, "" + status, Toast.LENGTH_SHORT).show();
-          }
-      });
+      EagleEye.getStatus(this, new OnChangeConnectivityListener() {
+                  @Override
+                  public void onChanged(boolean status) {
+                      Log.d(TAG, "onChanged status: " + status);
+                  }
+              });
       
 ## Check out example code: [Example](https://github.com/SumonHub/EagleEye/tree/master/app)
 
