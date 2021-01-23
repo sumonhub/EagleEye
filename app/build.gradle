@@ -9,7 +9,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
-        versionName "1.1.1"
+        versionName "1.1.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -31,6 +31,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     // Dependency on a local library module
     implementation project(':eagleeyelib')
-    //implementation 'com.github.SumonHub:EagleEye:1.1.0'
+    //implementation 'com.github.SumonHub:EagleEye:1.1.1'
 
 }
